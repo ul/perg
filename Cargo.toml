@@ -1,0 +1,13 @@
+[package]
+name = "perg"
+version = "0.1.0"
+authors = ["Ruslan Prokopchuk <fer.obbee@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+regex= "1.1.7"
+rayon= "1.1.0"
+
+[profile.release]
+panic = "abort"
+lto = true
